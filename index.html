@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English Academy</title>
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <style>
+        .carousel .carousel-item {
+            width: 100%;
+            position: relative;
+        }
+        #carousel1{
+            font-size:larger;
+            color: rgb(248, 249, 252);
+            font-style: oblique;
+            margin-bottom: 50px;
+        }
+        #carousel2{
+            font-size:larger;
+            color: rgb(5, 13, 36);
+            font-style: oblique; 
+            margin-bottom: 100px;
+        }
+        #carousel3{
+            font-size:larger;
+            color: rgb(9, 16, 37);
+            font-style: oblique;
+            margin-bottom: 100px;
+        }
+        .program-kursus{
+            text-align:center;
+            margin-top: 30px;
+            color: rgb(74, 126, 156);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .row{
+            text-align: center;
+        }
+        #baby-card{
+            background-color: blanchedalmond;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 20px;
+            margin-right: 5px;
+        }
+        #child-card{
+            background-color: rgb(233, 255, 205);
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 20px;
+            margin-right: 5px;
+        }
+        #teen-card{
+            background-color: rgb(205, 225, 255);
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 20px;
+            margin-right: 5px;
+        }
+        #adult-card{
+            background-color: rgb(249, 205, 255);
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 20px;
+            margin-right: 5px;
+        }
+        .title{
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(150, 133, 109);
+            background-color:whitesmoke;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .desc{
+            font-size: small;
+            color: rgb(54, 54, 54);
+            margin: 10px;
+            padding: 5px;
+        }
+        .subdesc{
+            font-size: small;
+            color: rgb(54, 54, 54);
+            margin: 10px;
+            padding: 5px;
+        }
+        .btn-schedule{
+            background-color:beige;
+            padding: 10px;
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+            text-decoration-line:none;
+            color: rgb(80, 74, 47);
+            border-style:hidden;
+        }
+        .btn-regist{
+            background-color:rgb(245, 231, 220);
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 10px;
+            text-decoration-line:none;
+            color: rgb(80, 74, 47);
+            border-style:hidden;
+        }
+        .kelebihan{
+            text-align: center;
+            margin-top: 30px;
+            color: rgb(74, 126, 156);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+
+         
+    </style>
+</head>
+<body>
+    <!-----Header----->
+    <header>
+        <!---Navbar--->
+    <nav class="pt-3 navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/brain.png" alt="brain" width="40" class="d-inline-block align-text-top">
+            LearnEnglish
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Program
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Baby Class</a></li>
+                  <li><a class="dropdown-item" href="#">Child Class</a></li>
+                  <li><a class="dropdown-item" href="#">Teen Class</a></li>
+                  <li><a class="dropdown-item" href="#">Adult Class</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="table.html">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="table.html">Price List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Form.html">Registration</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                    <li><a class="dropdown-item" href="#">Location</a></li>
+                </ul>
+             </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+      <!---Carousel--->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/carousel.png" class="d-block w-100" alt="carousel">
+            <div class="carousel-caption d-none d-md-block" id="carousel1">
+              <h5 class="fw-bold">Our English Trainer</h5>
+              <p>Diajarkan langsung oleh native speaker serta professional trainer yang akan membantu kelancaran bahasa Inggris anda.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/carousel1.jpg" class="d-block w-100" alt="carousel1">
+            <div class="carousel-caption d-none d-md-block" id="carousel2">
+              <h5 class="fw-bold">Online Learning</h5>
+              <p>Learn English adalah tempat untuk belajar bahasa Inggris melalui 100% oniine yang bisa dilakukan dimana saja.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/carousel2.png" class="d-block w-100" alt="carousel2">
+            <div class="carousel-caption d-none d-md-block" id="carousel3">
+              <h5 class="fw-bold">Communication Skills</h5>
+              <p>Melatih agar anda dapat berkomunikasi dengan lancar dalam bahasa Inggris .</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+
+
+      <!--Program Kursus-->
+      <div class="program-kursus mb-5">
+          <h1>Program di Learn English</h1>
+      </div>
+      <div class="container">
+        <div class="row ms-2 me-1">
+          <div class="col"  id="baby-card">
+            <div class="container-card-top">
+                <p class="title fw-bold">Baby Class</p>
+                <p class="desc fw-bold fst-italic text-secondary text-opacity-75 fs-5">Usia 2-5 Tahun<br>
+                    Harga mulai dari Rp. 1.000.000</p>
+                <p class="subdesc fw-bold lh-lg text-black-50">Mengenalkan Bahasa Inggris kepada anak dengan melakukan pembelajaran sambil bermain</p>
+            </div>
+              <div class="container-card-bottom">
+                <a class="program" href="table.html">
+                    <button class="btn-schedule">Schedule</button>
+                  </a>
+                  <a class="daftar" href="Form.html">
+                    <button class="btn-regist">Registration</button>
+                  </a>
+                </div>
+          </div>
+          <div class="col"  id="child-card">
+            <div class="container-card-top">
+                <p class="title">Child Class</p>
+                <p class="desc fw-bold fst-italic text-secondary text-opacity-75 fs-5">Usia 6-11 Tahun<br>
+                    Harga mulai dari Rp. 1.200.000</p>
+                <p class="subdesc fw-bold lh-lg text-black-50">Mengenalkan Bahasa Inggris sebagai subjek menarik untuk dipelajari</p>
+            </div>
+            <div class="container-card-bottom">
+              <a class="program" href="table.html">
+                  <button class="btn-schedule">Schedule</button>
+              </a>
+              <a class="daftar" href="Form.html">
+                  <button class="btn-regist">Registration</button>
+              </a>
+            </div>
+          </div>
+          <div class="col" id="teen-card">
+            <div class="container-card-top">
+                <p class="title">Teen Class</p>
+                <p class="desc fw-bold fst-italic text-secondary text-opacity-75 fs-5">Usia 12-17 Tahun<br>
+                    Harga mulai dari Rp. 1.350.000</p>
+                <p class="subdesc fw-bold lh-lg text-black-50">Mengasah teknik serta mematangkan kefasihan berbahasa Inggris pelajar</p>
+            </div>
+            <div class="container-card-bottom">
+              <a class="program" href="table.html">
+                  <button class="btn-schedule">Schedule</button>
+              </a>
+              <a class="daftar" href="Form.html">
+                  <button class="btn-regist">Registration</button>
+              </a>
+            </div>
+          </div>
+          <div class="col" id="adult-card">
+            <div class="container-card-top">
+                <p class="title">Adult Class</p>
+                <p class="desc fw-bold fst-italic text-secondary text-opacity-75 fs-5">Usia 18 Tahun ke atas
+                    Harga mulai dari Rp. 1.500.000</p>
+                <p class="subdesc fw-bold lh-lg text-black-50" >Meningkatkan kepercayaan diri pelajar dewasa dalam berbahasa Inggris</p>
+            </div>
+            <div class="container-card-bottom">
+              <a class="program" href="table.html">
+                  <button class="btn-schedule">Schedule</button>
+              </a>
+              <a class="daftar" href="Form.html">
+                  <button class="btn-regist">Registration</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Kelebihan Learn English-->
+      <div class="kelebihan mb-5">
+        <h1>Kenapa belajar di Learn English?</h1>
+    </div>
+    <div class="container">
+        <div class="row row-cols-2">
+          <div class="col">
+            <div class="bg-success p-2 text-dark bg-opacity-25 border rounded-pill shadow p-3 mb-5">
+                <p class="title-2 fs-5 fw-bold text-success text-opacity-75 font-monospace">Listening</p>
+                <p class="desc-2 lh-lg fw-normal text-black-50">Agar mahir ketika mendengarkan informasi berupa lisan dalam bahasa Inggris</p>
+                
+            </div>
+          </div>
+          <div class="col">
+            <div class="bg-danger p-2 text-dark bg-opacity-25 border rounded-pill shadow p-3 mb-5">
+                <p class="title-2 fs-5 fw-bold text-danger text-opacity-50 font-monospace">Speaking</p>
+                <p class="desc-2 lh-lg fw-normal text-black-50 ">Menjadi mahir, lancar dan percaya diri ketika berbicara berbahasa Inggris</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="bg-primary p-2 text-dark bg-opacity-25 border rounded-pill shadow p-3 mb-5">
+                <p class="title-2 fs-5 fw-bold text-primary text-opacity-50 font-monospace">Writing</p>
+                <p class="desc-2 lh-lg fw-normal text-black-50">Mampu menyampaikan gagasan dalam tulisan hingga esai dalam bahasa Inggris </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="bg-warning p-2 text-dark bg-opacity-25 border rounded-pill shadow p-3 mb-5">
+                <p class="title-2 fs-5 fw-bold text-warning text-opacity-50 font-monospace">Reading</p>
+                <p class="desc-2 lh-lg fw-normal text-black-50">Dapat membaca bacaan keseharian hingga artikel atau jurnal berbahasa Inggris dengan efektif</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!--Footer-->
+    <footer class="bg-primary bg-opacity-25 pt-2 pb-2">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-4">
+                  <a class="navbar-brand text-black-50 " href="#">
+                    <img src="assets/brain.png" alt="brain" width="50" class="d-inline-block align-text-top pb-4">
+                    LearnEnglish
+                  </a><br>
+                  <a class="logo-sosmed-instagram " href="#">
+                    <img src="assets/instagram.png" alt="instagram" width="40">
+                  </a>
+                  <a class="logo-sosmed-youtube " href="#">
+                    <img src="assets/youtube.png" alt="youtube" width="40">
+                  </a>
+                  <a class="logo-sosmed-whatsapp " href="#">
+                    <img src="assets/whatsapp.png" alt="whatsapp" width="40">
+                </a>
+                  <a class="logo-sosmed-twitter" href="#">
+                      <img src="assets/twitter.png" alt="twitter" width="40">
+                  </a>
+                  <a class="logo-sosmed-facebook" href="#">
+                    <img src="assets/facebook.png" alt="facebook" width="40">
+                </a>
+                </div>
+                <div class="col-6 ms-5">
+                    <div class="list-navbar-footer">
+                        <ul class="navitem-footer list-group list-group-flush">
+                            <li class="navitem-footer-1 list-group-item bg-transparent fs-6 fw-bold">
+                                <a class="navlink-footer-1 text-decoration-none text-primary text-opacity-75" href="index.html">Home</a>
+                            </li>
+                            <li class="navitem-footer-2 list-group-item bg-transparent fs-6 fw-bold">
+                                <a class="navlink-footer-2 text-decoration-none text-primary text-opacity-75" href="#">Program</a>
+                            </li>
+                            <li class="navitem-footer-3 list-group-item bg-transparent fs-6 fw-bold">
+                                <a class="navlink-footer-3 text-decoration-none text-primary text-opacity-75" href="table.html">Schedule</a>
+                            </li>
+                            <li class="navitem-footer-4 list-group-item bg-transparent fs-6 fw-bold">
+                                <a class="navlink-footer-4 text-decoration-none text-primary text-opacity-75" href="table.html">Price List</a>
+                            </li>
+                            <li class="navitem-footer-5 list-group-item bg-transparent fs-6 fw-bold">
+                                <a class="navlink-footer-5 text-decoration-none text-primary text-opacity-75" href="Form.html">Registration</a>
+                            </li>
+                            <li class="navitem-footer-6 list-group-item bg-transparent fs-6 fw-bold">
+                                <a class="navlink-footer-6 text-decoration-none text-primary text-opacity-75" href="#">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="mt-5  text-black-50" >@2021 Learn English. All Right Reserved PT Prak Desain Web</p>
+                </div>
+              </div>
+        </div>
+    </footer>
+
+    <!-----Script Bootstrap----->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

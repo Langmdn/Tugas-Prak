@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price List & Schedule - Learn English Academy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <!-----Header----->
+    <header>
+        <!---Navbar--->
+    <nav class="pt-3 navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/brain.png" alt="brain" width="40" class="d-inline-block align-text-top">
+            LearnEnglish
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Program
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Baby Class</a></li>
+                  <li><a class="dropdown-item" href="#">Child Class</a></li>
+                  <li><a class="dropdown-item" href="#">Teen Class</a></li>
+                  <li><a class="dropdown-item" href="#">Adult Class</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="table.html">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="table.html">Price List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Form.html">Registration</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                    <li><a class="dropdown-item" href="#">Location</a></li>
+                </ul>
+             </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-----Table Price List & Schedule----->
+    <div class="container bg-primary bg-opacity-10 mt-5 mb-4">
+        <div class="row">
+            <div class="col-5 table-responsive-md">
+                <div class="table-pricelist">
+                    <table class="table table-bordered border-secondary border border-3 caption-top">
+                        <caption class="fs-4 mt-3">Price List</caption>
+                        <thead class="table-primary">
+                          <tr>
+                              <th colspan="4" class="text-center">Kelas Kursus</th>
+                          </tr>
+                          <tr class="text-center">
+                            <th scope="col"></th>
+                            <th scope="col">Standard</th>
+                            <th scope="col">VIP</th>
+                            <th scope="col">Private</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-secondary table-striped">
+                          <tr>
+                            <th scope="row">Baby Class</th>
+                            <td>Rp. 1.000.000</td>
+                            <td>Rp. 1.250.000</td>
+                            <td>Rp. 1.500.000</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Child Class</th>
+                            <td>Rp. 1.200.000</td>
+                            <td>Rp. 1.400.000</td>
+                            <td>Rp. 1.600.000</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Teen Class</th>
+                            <td>Rp. 1.350.000</td>
+                            <td>Rp. 1.550.000</td>
+                            <td>Rp. 1.750.000</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Adult Class</th>
+                            <td>Rp. 1.500.000</td>
+                            <td>Rp. 1.700.000</td>
+                            <td>Rp. 1.900.000</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-pricelist-desc">
+                    <p class="fst-italic">Biaya Pendaftaran : Rp. 350.000 *hanya dibayar sekali<br>
+                    Biaya Kursus dibayar setiap satu bulan sekali</p>
+                </div>
+            </div>
+            <div class="col-7 table-responsive-md">
+                <div class="table-schedule">
+                    <table class="table table-bordered border-secondary border border-3 caption-top">
+                        <caption class="fs-4 mt-3">Schedule</caption>
+                        <thead class="table-primary">
+                          <tr>
+                              <th colspan="4" class="text-center">Waktu Kelas Kursus</th>
+                          </tr>
+                          <tr class="text-center">
+                            <th scope="col"></th>
+                            <th scope="col">Standard</th>
+                            <th scope="col">VIP</th>
+                            <th scope="col">Private</th>
+                          </tr>
+                        </thead>
+                        <tbody class="table-secondary table-striped">
+                          <tr>
+                            <th scope="row">Baby Class</th>
+                            <td>Jumat (9:00-9:40)</td>
+                            <td>Jumat (10:00-10:40)</td>
+                            <td>Sabtu (11:00:11:40)</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Child Class</th>
+                            <td>Senin-Rabu (13:00-13:40)</td>
+                            <td>Selasa-Kamis (12:00-12:40)</td>
+                            <td>Senin-Rabu (14:00-14:40)</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Teen Class</th>
+                            <td>Selasa-Kamis (13:10-14:10)</td>
+                            <td>Senin-Rabu (15:50-16:50)</td>
+                            <td>Selasa-Kamis (14:30-15:30)</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Adult Class</th>
+                            <td>Sabtu (10:00-11:30)</td>
+                            <td>Sabtu (13:00-14:30)</td>
+                            <td>Jumat (11:00-12:30)</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-schedule-desc">
+                    <p class="fst-italic">1 Pertemuan 2 Sesi<br>Baby Class : 4 Pertemuan/Bulan (1 sesi = 20 menit) 
+                    <br>Child Class : 8 Pertemuan/Bulan (1 sesi = 20 menit) <br>Teen Class : 8 Pertemuan/bulan (1 sesi = 30 menit)
+                    <br>Adult Class : 4 Pertemuan/Bulan (1 sesi = 45 menit)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!--Footer-->
+     <footer class="bg-primary bg-opacity-25 pt-2 pb-2 text-center">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-4">
+                  <a class="navbar-brand text-black-50 " href="#">
+                    <img src="assets/brain.png" alt="brain" width="50" class="d-inline-block align-text-top pb-4">
+                    LearnEnglish
+                  </a><br>
+                  <a class="logo-sosmed-instagram " href="#">
+                    <img src="assets/instagram.png" alt="instagram" width="40">
+                  </a>
+                  <a class="logo-sosmed-youtube " href="#">
+                    <img src="assets/youtube.png" alt="youtube" width="40">
+                  </a>
+                  <a class="logo-sosmed-whatsapp " href="#">
+                    <img src="assets/whatsapp.png" alt="whatsapp" width="40">
+                </a>
+                  <a class="logo-sosmed-twitter" href="#">
+                      <img src="assets/twitter.png" alt="twitter" width="40">
+                  </a>
+                  <a class="logo-sosmed-facebook" href="#">
+                    <img src="assets/facebook.png" alt="facebook" width="40">
+                </a>
+                </div>
+                <div class="col-6 ms-5">
+                    <div class="list-navbar-footer">
+                        <ul class="navitem-footer list-group list-group-flush">
+                            <li class="navitem-footer-1 list-group-item bg-transparent fs-6 fw-bold">
+                                <a class="navlink-footer-1 text-decoration-none text-primary text-opacity-75" href="index.html">Home</a>
+                            </li>
+                            <li class="navitem-footer-2 list-group-item bg-transparent fs-6 fw-bold">
+                                <a class="navlink-footer-2 text-decoration-none text-primary text-opacity-75" href="#">Program</a>
+                            </li>
+                            <li class="navitem-footer-3 list-group-item bg-transparent fs-6 fw-bold">
+                                <a class="navlink-footer-3 text-decoration-none text-primary text-opacity-75" href="table.html">Schedule</a>
+                            </li>
+                            <li class="navitem-footer-4 list-group-item bg-transparent fs-6 fw-bold">
+                                <a class="navlink-footer-4 text-decoration-none text-primary text-opacity-75" href="table.html">Price List</a>
+                            </li>
+                            <li class="navitem-footer-5 list-group-item bg-transparent fs-6 fw-bold">
+                                <a class="navlink-footer-5 text-decoration-none text-primary text-opacity-75" href="Form.html">Registration</a>
+                            </li>
+                            <li class="navitem-footer-6 list-group-item bg-transparent fs-6 fw-bold">
+                                <a class="navlink-footer-6 text-decoration-none text-primary text-opacity-75" href="#">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="mt-5  text-black-50" >@2021 Learn English. All Right Reserved PT Prak Desain Web</p>
+                </div>
+              </div>
+        </div>
+    </footer>
+
+    <!-----Script Bootstrap----->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
